@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gameList>
+  <game>
+    <path>./Super Mario Sunshine.sh</path>
+    <name>Super Mario Sunshine</name>
+    <image>./sunshine/screenshot.jpg</image>
+    <desc>Mario and FLUDD clean up Isle Delfino after a look-alike covers it in goop and the Shine Sprites scatter. A native port that needs your own copy of the game.</desc>
+    <releasedate>20020826T000000</releasedate>
+    <developer>Nintendo EAD</developer>
+    <publisher>Nintendo</publisher>
+    <genre>Platformer</genre>
+  </game>
+</gameList>

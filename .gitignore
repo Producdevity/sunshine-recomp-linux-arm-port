@@ -12,3 +12,6 @@ build/
 gamefiles/
 saves/
 cache/
+# Catalogue images are device captures of the game; the packager requires them locally.
+packaging/ports/*/screenshot.jpg
+packaging/ports/*/cover.jpg

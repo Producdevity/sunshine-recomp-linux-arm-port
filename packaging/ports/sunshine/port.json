@@ -1,0 +1,33 @@
+{
+  "version": 4,
+  "name": "sunshine.zip",
+  "items": [
+    "Super Mario Sunshine.sh",
+    "sunshine"
+  ],
+  "items_opt": [],
+  "attr": {
+    "title": "Super Mario Sunshine",
+    "porter": [
+      "Producdevity"
+    ],
+    "desc": "A native port of Super Mario Sunshine: the game's code is translated from your own disc on the device and runs on gc-recomp and Starlet.",
+    "desc_md": null,
+    "inst": "Copy your own disc image of Super Mario Sunshine (USA, GMSE01) as .iso, .gcm or .rvz to the sunshine/gamefiles folder, next to the Super Mario Sunshine launcher in your ports folder. The first launch translates the game's code from the disc, which takes a few seconds.",
+    "inst_md": null,
+    "genres": [
+      "platformer"
+    ],
+    "image": null,
+    "rtr": false,
+    "exp": true,
+    "runtime": [],
+    "store": [],
+    "availability": "paid",
+    "reqs": [],
+    "arch": [
+      "aarch64"
+    ],
+    "min_glibc": "2.27"
+  }
+}
