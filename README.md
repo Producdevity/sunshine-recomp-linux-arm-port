@@ -5,6 +5,10 @@ game's code from the player's own disc; the repository and the package hold no g
 code. The PortMaster package and its player notes are in
 [packaging/ports/sunshine](packaging/ports/sunshine/README.md).
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Licenses
 
 This project is licensed under the GNU General Public License v3.0; see
