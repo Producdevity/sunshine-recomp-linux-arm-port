@@ -19,8 +19,8 @@ other ports share belongs in [Starlet](https://github.com/Producdevity/starlet).
 
 - Keep each pull request to one change a reviewer can read line by line. Keep related changes
   together and unrelated ones apart.
-- Fix a reported problem or a clear gap. Open an issue first for larger features, so we can
-  agree on the approach before you build it.
+- Fix a reported problem or a clear gap. For larger features, open an issue first to agree on
+  the approach before building it.
 - Follow the surrounding code. Add a comment only where the code can't explain itself, such
   as a hardware quirk or an external constraint.
 - Write commit titles as `type(scope): summary`, for example `fix(platform): ...`, in at most
