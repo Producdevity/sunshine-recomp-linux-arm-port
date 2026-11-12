@@ -11,7 +11,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(SMS_DISC "" CACHE FILEPATH "Super Mario Sunshine (USA) disc image (ISO) for sunshine-c")
 # Function boundaries from the doldecomp/sms decompilation (CC0), commit 4b2fd238.
 set(SMS_SYMBOLS "${CMAKE_CURRENT_SOURCE_DIR}/config/GMSE01.symbols.txt" CACHE FILEPATH "GMSE01 function list (dtk symbols.txt)")
-set(GC_RECOMP_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../Tooling/gc-recomp" CACHE PATH "gc-recomp checkout")
+# gc-recomp is a submodule (git clone --recurse-submodules); point GC_RECOMP_DIR at another
+# checkout to build against local gc-recomp work.
+set(GC_RECOMP_DIR "${CMAKE_CURRENT_SOURCE_DIR}/third_party/gc-recomp" CACHE PATH "gc-recomp checkout")
 set(GC_RECOMPILER "" CACHE FILEPATH "Host gcrecomp for cross builds")
 
 if(GC_RECOMPILER)
@@ -21,6 +23,9 @@ set(GC_TESTS OFF CACHE BOOL "" FORCE)
 set(GC_FRONTEND ON CACHE BOOL "" FORCE)
 set(GC_BACKEND ON CACHE BOOL "" FORCE)
 set(STARLET_GLES ON CACHE BOOL "" FORCE)
+if(NOT EXISTS "${GC_RECOMP_DIR}/CMakeLists.txt")
+    message(FATAL_ERROR "gc-recomp not found in ${GC_RECOMP_DIR}; run git submodule update --init --recursive")
+endif()
 add_subdirectory("${GC_RECOMP_DIR}" gc-recomp)
 
 add_executable(sunshine src/main.cpp)
