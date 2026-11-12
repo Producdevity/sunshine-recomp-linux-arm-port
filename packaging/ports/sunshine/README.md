@@ -9,7 +9,12 @@ keeps the result in `sunshine/cache`.
 Copy your disc image of Super Mario Sunshine (USA, GMSE01, revision 0) into `sunshine/gamefiles`.
 Accepted: `.iso`, `.gcm`, and `.rvz` as Dolphin saves it by default (Zstandard) or
 uncompressed. RVZ images compressed with bzip2 or LZMA need converting again with
-Dolphin's defaults, or to ISO. Memory cards are kept in `sunshine/saves`.
+Dolphin's defaults, or to ISO.
+
+Memory card A is kept in `sunshine/saves/USA/Card A` as Dolphin GCI files.
+Copy them to or from Dolphin's `GC/USA/Card A` folder to move saves between the two.
+A card from an earlier version (`saves/memcard-a.raw`) is imported on first launch
+and kept as `memcard-a.raw.imported`.
 
 ## Controls
 
