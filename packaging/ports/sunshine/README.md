@@ -18,7 +18,23 @@ and kept as `memcard-a.raw.imported`.
 
 ## Controls
 
-The GameCube layout on the handheld's buttons. PortMaster's exit chord (usually Select + Start) quits.
+Buttons are named by position, since handhelds print different labels on them.
+
+| Handheld | GameCube |
+|--|--|
+| Bottom face button | A |
+| Left face button | B |
+| Right face button | X |
+| Top face button | Y |
+| L1, L2 | L |
+| R2 | R |
+| R1 | Z |
+| Start | Start |
+| D-Pad | D-Pad |
+| Left stick | Control stick |
+| Right stick | C stick |
+
+PortMaster's exit chord (usually Select + Start) quits and saves the memory card.
 
 ## Notes
 
