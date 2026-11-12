@@ -30,7 +30,8 @@ other ports share belongs in [Starlet](https://github.com/Producdevity/starlet).
 
 ## Testing
 
-- Run the host tests described in the README.
+- Build the port as the README describes. Changes to the recompiler or runtime go to gc-recomp
+  with its tests.
 - Test on a handheld through its frontend and the PortMaster launcher, and name the device,
   firmware and GPU driver (for example Mali r20p0 or Panfrost).
 
