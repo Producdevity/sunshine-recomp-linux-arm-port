@@ -34,6 +34,8 @@ mkdir "$port/sunshine" "$port/sunshine/gamefiles"
 "$strip" -o "$port/sunshine/sunshine.aarch64" "$build/sunshine"
 mkdir "$port/sunshine/licenses"
 starlet=$(sed -n 's/^GC_STARLET_DIR:PATH=//p' "$build/CMakeCache.txt")
+cp "$root/LICENSE" "$port/sunshine/licenses/LICENSE.sunshine.txt"
+cp "$recomp/LICENSE" "$port/sunshine/licenses/LICENSE.gc-recomp.txt"
 cp "$starlet/LICENSE" "$port/sunshine/licenses/LICENSE.starlet.txt"
 cp "$starlet/third_party/zstd/LICENSE" "$port/sunshine/licenses/LICENSE.zstd.txt"
 cp "$root/config/LICENSE.doldecomp-sms.txt" "$port/sunshine/licenses/LICENSE.doldecomp-sms.txt"

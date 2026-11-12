@@ -15,6 +15,7 @@ from the player's disc. It contains no game code.
 
 ## Linked libraries
 
+- gc-recomp (recompiler, runtime and frontend): GPL-3.0, `licenses/LICENSE.gc-recomp.txt` in the package.
 - Starlet (GameCube/Wii GX renderer): GPL-3.0, `licenses/LICENSE.starlet.txt` in the package.
 - zstd (Zstandard decompression, through Starlet's `third_party/zstd`, v1.5.6): BSD,
   `licenses/LICENSE.zstd.txt` in the package.
